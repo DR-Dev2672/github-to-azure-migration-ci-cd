@@ -13,3 +13,17 @@ Implement CD pipelines
 Use Azure-native tools and best practices
 
 ```
+**Architecture**
+
+```
+GitHub Repo
+↓ (Import)
+Azure Repos
+↓
+CI Pipeline (Build, Test)
+↓
+Artifacts
+↓
+CD Pipeline (Deploy)
+↓
+Target Environment(VM / App Service / AKS)
